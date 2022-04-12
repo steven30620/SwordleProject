@@ -1,19 +1,27 @@
 <template>
   <div id="appVue">
+    <div id="appVue--header">
+      <SwordleHeader />
+    </div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import SwordleHeader from "./components/header/HeaderComponent.vue";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    SwordleHeader,
+  },
 };
 </script>
 
 <style lang="scss">
 #appVue {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
