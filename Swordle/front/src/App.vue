@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss">
 #appVue {
+  user-select: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
